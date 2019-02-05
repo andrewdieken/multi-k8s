@@ -12,7 +12,7 @@ before_install:
   - curl https://sdk.cloud.google.com | bash > /dev/null;
   - source $HOME/google-cloud-sdk/path.bash.inc
   # update and install kubectl inside of our travis environment
-  - glcoud components update kubectl
+  - gcloud components update kubectl
   # tell google cloud who we are and give access to our account
   # credentials are inside file `service-account.json` -> created through google clound (create a service account)
   # down load file as json and upload to travis
